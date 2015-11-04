@@ -18,6 +18,7 @@
     <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
   </div>
 
+
   <button id="submit-all">Submit all files</button>
 
 {!!Form::close()!!} 
@@ -32,6 +33,8 @@ Dropzone.options.myDropzone = {
   uploadMultiple: true,
   maxFilesize: 10,
   maxFiles:2,
+  addRemoveLinks: true,
+  acceptedFiles:".png, .jpg",
 
   init: function() {
     var submitButton = document.querySelector("#submit-all")
